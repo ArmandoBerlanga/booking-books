@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import { onMounted, reactive } from '@vue/runtime-core';
 import { Book } from '../models/IndexPage';
 import { useRouter } from 'vue-router';
