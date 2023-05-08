@@ -4,9 +4,10 @@
 <template>
     <q-layout view="lHh Lpr lFf">
         <q-header>
-            <q-toolbar>
-                <q-toolbar-title>
-                    Booking Books
+            <q-toolbar class="q-px-md">
+                <q-toolbar-title id="business">
+                    <img src="~assets/icon.png" alt="icon of the page" style="width: 30px;" />
+                    <span>Booking Books</span>
                 </q-toolbar-title>
 
                 <nav id="nav">
@@ -26,5 +27,10 @@
 </template>
 
 <style lang="sass" scoped>
+#business
+    display: flex
+    align-items: center
 
+    img
+        margin-right: 10px
 </style>

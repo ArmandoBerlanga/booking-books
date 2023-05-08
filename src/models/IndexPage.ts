@@ -6,4 +6,5 @@ export interface Book {
     author: string;
     tags: string[];
     price: number;
+    description: string;
 }

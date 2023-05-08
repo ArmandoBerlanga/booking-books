@@ -6,12 +6,9 @@ const routes: RouteRecordRaw[] = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
         { path: '', component: () => import('pages/IndexPage.vue') },
-        { path: 'book/:id', component: () => import('pages/ErrorNotFound.vue'), props: true },
+        { path: 'book/:id', component: () => import('pages/Book.vue'), props: true },
     ],
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),

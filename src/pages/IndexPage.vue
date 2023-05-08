@@ -3,101 +3,9 @@
 import { onMounted, reactive } from '@vue/runtime-core';
 import { Book } from '../models/IndexPage';
 import { useRouter } from 'vue-router';
+import books from '../assets/books';
 
 const router = useRouter();
-
-const books: Book[] = [
-    {
-        id: 1,
-        title: 'The Cat in the Hat',
-        cover: 'cover1.jpeg',
-        puntuation: 4.5,
-        author: 'Dr. Seuss',
-        tags: ['children', 'funny'],
-        price: 230.99
-    },
-    {
-        id: 2,
-        title: 'Moon',
-        cover: 'cover2.jpeg',
-        puntuation: 5,
-        author: 'Oliver Jeffers',
-        tags: ['infantil', 'risa'],
-        price: 312.99
-    },
-    {
-        id: 3,
-        title: 'The Girl in Red',
-        cover: 'cover3.jpeg',
-        puntuation: 4,
-        author: 'Christina Henry',
-        tags: ['horror', 'thriller'],
-        price: 224.99
-    },
-    {
-        id: 4,
-        title: 'The arsonist',
-        cover: 'cover4.jpeg',
-        puntuation: 4.5,
-        author: 'Stephanie Oakes',
-        tags: ['horror', 'thriller'],
-        price: 399.99
-    },
-    {
-        id: 5,
-        title: 'Harry Potter and the Goblet of Fire',
-        cover: 'cover5.jpg',
-        puntuation: 4.5,
-        author: 'J.K. Rowling',
-        tags: ['infanitl', 'sci-fi'],
-        price: 299.99
-    },
-    {
-        id: 6,
-        title: 'A short history of Biology',
-        cover: 'cover6.jpg',
-        puntuation: 3.5,
-        author: 'John Gribbin',
-        tags: ['ciencia', 'historia'],
-        price: 418.99
-    },
-    {
-        id: 7,
-        title: 'Biology Student book',
-        cover: 'cover7.jpg',
-        puntuation: 2.5,
-        author: 'David Brooker',
-        tags: ['ciencia', 'historia'],
-        price: 189.50
-    },
-    {
-        id: 8,
-        title: 'The Invisible Cloud',
-        cover: 'cover8.png',
-        puntuation: 4.5,
-        author: 'Adam Rutherford',
-        tags: ['tecnologia'],
-        price: 419.99
-    },
-    {
-        id: 9,
-        title: 'Español Libro de Lectura',
-        cover: 'cover9.png',
-        puntuation: 1.5,
-        author: 'Luisa Fernanda',
-        tags: ['español', 'lectura'],
-        price: 249.99
-    },
-    {
-        id: 10,
-        title: 'Econocmics Student Book',
-        cover: 'cover10.jpg',
-        puntuation: 5,
-        author: 'Matthew Taylor',
-        tags: ['economia', 'negocios'],
-        price: 399.99
-    }
-]
 
 const state = reactive({
     books,
@@ -196,7 +104,6 @@ onMounted(() => {
 </template>
 
 <style lang="sass" scoped>
-
 .header
     display: grid
     grid-template-columns: 1fr 0.5fr 1fr
